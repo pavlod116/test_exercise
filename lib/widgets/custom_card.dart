@@ -33,8 +33,8 @@ class CustomCard extends BaseStatelessWidget {
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(10.0),
-                  child: Image.asset(
-                    AppImages.coffee,
+                  child: Image(
+                    image: NetworkImage('${item.imageUrl}'),
                     height: 100.0,
                     width: 100.0,
                     fit: BoxFit.cover,
@@ -44,14 +44,25 @@ class CustomCard extends BaseStatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 8, left: 15),
-                      child: Text(
-                        '${item.name}',
-                        style: const TextStyle(fontSize: 16),
+                      child: SizedBox(
+                        height: 20,
+                        width: 126,
+                        child: Text(
+                          '${item.name}',
+                          style: const TextStyle(fontSize: 16),
+                        ),
                       ),
                     ),
-                    Text(
-                      '${item.price}',
-                      style: const TextStyle(fontSize: 12),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 15),
+                      child: SizedBox(
+                        height: 16,
+                        width: 126,
+                        child: Text(
+                          '${item.price}',
+                          style: const TextStyle(fontSize: 12),
+                        ),
+                      ),
                     ),
                     Row(
                       children: [
@@ -79,25 +90,25 @@ class CustomCard extends BaseStatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 57),
+                  padding: const EdgeInsets.only(left: 17),
                   child: Container(
                     height: 32,
                     width: 62,
-                    decoration: const BoxDecoration(
-                      color: Colors.yellow,
-                        borderRadius: BorderRadius.only(topLeft:  Radius.circular(16), bottomLeft: Radius.circular(16)),
+                    decoration:  BoxDecoration(
+                      color: item.color,
+                        borderRadius: const BorderRadius.only(topLeft:  Radius.circular(16), bottomLeft: Radius.circular(16)),
                     ),
                     child: Column(
                       children:    [
                         Padding(
                           padding: const EdgeInsets.only(top: 2, left: 15),
-                          child: Text('${item.cashBack}', style: const TextStyle(
+                          child: Text('${item.interest}', style: const TextStyle(
                             fontSize: 10, color: AppColors.white
                           ),),
                         ),
-                      const Padding(
-                        padding: EdgeInsets.only(left: 15),
-                        child: Text('кэшбэк',style: TextStyle(
+                       Padding(
+                        padding: const EdgeInsets.only(left: 15),
+                        child: Text('${item.cashBack}',style: const TextStyle(
                             fontSize: 10, color: AppColors.white
                         ),),
                       )

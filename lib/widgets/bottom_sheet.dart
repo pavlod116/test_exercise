@@ -4,7 +4,6 @@ import 'package:test_exercise/constants/app_colors.dart';
 import 'package:test_exercise/constants/app_images.dart';
 import 'package:test_exercise/constants/app_string.dart';
 import 'package:test_exercise/core/widgets/base_stateful_widget.dart';
-import 'package:test_exercise/models/cofe_card.dart';
 import 'package:test_exercise/providers/home_provider.dart';
 import 'package:test_exercise/widgets/custom_card.dart';
 

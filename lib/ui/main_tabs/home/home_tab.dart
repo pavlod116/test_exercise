@@ -60,19 +60,19 @@ class _HomeState extends State<HomeTab> {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        const Padding(padding: EdgeInsets.only(left: 16), child: Text('Категории')),
+        const Padding(padding: EdgeInsets.only(left: 16), child: Text(AppString.categories, style: TextStyle(color: AppColors.white, fontSize: 18),)),
         SizedBox(
           height: 140,
           child: ListView.builder(
               padding: const EdgeInsets.only(left: 16),
               shrinkWrap: true,
               scrollDirection: Axis.horizontal,
-              itemCount: homeVM.categoryList.length,
+              itemCount: homeVM.i.length,
               itemBuilder: (context, index) {
                 return Column(
                   children: [
-                    CustomOutlinedButton(AppColors.travel, homeVM.categoryList.values.toList()[index]),
-                    CustomText(homeVM.categoryList.keys.toList()[index]),
+                    CustomOutlinedButton(homeVM.i[index]),
+                    CustomText(homeVM.i[index]),
                   ],
                 );
               }),

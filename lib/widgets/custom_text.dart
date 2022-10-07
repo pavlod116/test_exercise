@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:test_exercise/constants/app_colors.dart';
 import 'package:test_exercise/core/widgets/base_stateless_widget.dart';
+import 'package:test_exercise/models/catalog.dart';
 
 class CustomText extends BaseStatelessWidget {
-  const CustomText(this.text, {Key? key}) : super(key: key);
+  const CustomText(this.item,  {Key? key}) : super(key: key);
 
-  final String text;
+  final Catalog item;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ class CustomText extends BaseStatelessWidget {
       height: 24,
       child: Text(
         textAlign: TextAlign.center,
-        text,
+        '${item.name}',
         style: const TextStyle(color: AppColors.white, fontSize: 10, ),
       ),
     ),

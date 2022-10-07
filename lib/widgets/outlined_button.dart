@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:test_exercise/core/widgets/base_stateless_widget.dart';
+import 'package:test_exercise/models/catalog.dart';
 
 class CustomOutlinedButton extends BaseStatelessWidget {
-  const CustomOutlinedButton(
-      this.color,
-      this.image,
-      {Key? key})
-      : super(key: key);
+  const CustomOutlinedButton(this.item, {Key? key}) : super(key: key);
 
-  final Color color;
-  final String image;
+  final Catalog item;
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +14,11 @@ class CustomOutlinedButton extends BaseStatelessWidget {
       child: OutlinedButton(
         onPressed: () {},
         style: OutlinedButton.styleFrom(
-          side: BorderSide(color: color, width: 3),
+          side: BorderSide(color: item.color!, width: 3),
           shape: const CircleBorder(),
           padding: const EdgeInsets.all(12),
         ),
-        child: Image.asset(image),
+        child: Image.asset("${item.image}"),
       ),
     );
   }
