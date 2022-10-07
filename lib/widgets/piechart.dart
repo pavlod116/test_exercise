@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pie_chart/pie_chart.dart';
-import 'package:test_exercise/core/ui/widgets/base_stateless_widget.dart';
+import 'package:test_exercise/core/widgets/base_stateless_widget.dart';
 
 // ignore: must_be_immutable
 class PieCharts extends BaseStatelessWidget {

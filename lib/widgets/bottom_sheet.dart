@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test_exercise/constants/app_colors.dart';
 import 'package:test_exercise/constants/app_images.dart';
 import 'package:test_exercise/constants/app_string.dart';
-import 'package:test_exercise/core/ui/widgets/base_stateful_widget.dart';
+import 'package:test_exercise/core/widgets/base_stateful_widget.dart';
 import 'package:test_exercise/models/cofe_card.dart';
 import 'package:test_exercise/widgets/custom_card.dart';
 
@@ -52,17 +52,17 @@ class _BottomSheetState extends State<BottomSheetBars> {
                     ),
                   ],
                 ),
-                Expanded(
-                  child: ListView.builder(
-                    shrinkWrap: true,
-                    itemCount: data.length,
-                    itemBuilder: (context, index) {
-                      CafeCard item = data[index];
-                      return CustomCard(item);
-                    },
-                    controller: scrollController,
-                  ),
-                ),
+                // Expanded(
+                //   child: ListView.builder(
+                //     shrinkWrap: true,
+                //     itemCount: data.length,
+                //     itemBuilder: (context, index) {
+                //       CafeCard item = data[index];
+                //       return CustomCard(item);
+                //     },
+                //     controller: scrollController,
+                //   ),
+                // ),
               ],
             ),
           );

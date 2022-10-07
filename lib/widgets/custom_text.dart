@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_exercise/constants/app_colors.dart';
-import 'package:test_exercise/core/ui/widgets/base_stateless_widget.dart';
+import 'package:test_exercise/core/widgets/base_stateless_widget.dart';
 
 class CustomText extends BaseStatelessWidget {
   const CustomText(this.text, {Key? key}) : super(key: key);

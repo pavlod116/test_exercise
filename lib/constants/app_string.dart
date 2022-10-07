@@ -1,6 +1,4 @@
-
-
-class AppString{
+class AppString {
   static const String partners = "Партнеры";
   static const String information = "Информация";
   static const String categories = "Категории";
@@ -11,10 +9,4 @@ class AppString{
   static const String travel = "Путешествия";
   static const String services = "Услуги";
   static const String offers = "Горячие предложения";
-
-
-
-
-
-
 }

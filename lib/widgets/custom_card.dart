@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_exercise/constants/app_colors.dart';
 import 'package:test_exercise/constants/app_images.dart';
-import 'package:test_exercise/core/ui/widgets/base_stateless_widget.dart';
+import 'package:test_exercise/core/widgets/base_stateless_widget.dart';
 import 'package:test_exercise/models/cofe_card.dart';
 import 'package:test_exercise/ui/tap_card/tap_card_page.dart';
 

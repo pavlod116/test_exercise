@@ -1,8 +1,6 @@
-
-
 import 'package:flutter/material.dart';
 
-class AppColors{
+class AppColors {
   static const Color backgroud = Color(0xFF1D59F3);
   static const Color focus = Color(0xFF24CFFF);
   static const Color white = Color(0xFFFFFFFF);
@@ -14,7 +12,4 @@ class AppColors{
   static const Color beauty = Color(0xFFFF4D17);
   static const Color travel = Color(0xFFFFAB02);
   static const Color services = Color(0xFF8B00D0);
-
-
-
 }

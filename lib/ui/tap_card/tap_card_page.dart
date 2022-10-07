@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_exercise/constants/app_colors.dart';
 import 'package:test_exercise/constants/app_images.dart';
-import 'package:test_exercise/core/ui/widgets/base_stateful_widget.dart';
+import 'package:test_exercise/core/widgets/base_stateful_widget.dart';
 
 class TapCardPage extends BaseStatefulWidget {
   const TapCardPage({Key? key}) : super(key: key);

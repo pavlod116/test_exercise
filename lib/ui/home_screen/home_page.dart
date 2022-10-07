@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:test_exercise/constants/app_colors.dart';
 import 'package:test_exercise/constants/app_images.dart';
-import 'package:test_exercise/core/ui/widgets/base_stateful_widget.dart';
+import 'package:test_exercise/core/widgets/base_stateful_widget.dart';
 import 'package:test_exercise/ui/buttom_bar/buttom_notifier.dart';
 import 'package:test_exercise/ui/home_screen/home.dart';
-import 'package:test_exercise/widgets/bottom_sheet.dart';
 
 class HomePage extends BaseStatefulWidget {
   const HomePage({Key? key}) : super(key: key);

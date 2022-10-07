@@ -15,11 +15,4 @@ class AppImages{
   static const String coffee = "assets/coffee.png";
   static const String cafe = "assets/cafe.png";
   static const String aroma = "assets/aroma.png";
-
-
-
-
-
-
-
 }
