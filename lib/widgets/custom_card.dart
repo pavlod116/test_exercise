@@ -21,7 +21,7 @@ class CustomCard extends BaseStatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const TapCardPage()),
+              MaterialPageRoute(builder: (context) =>  TapCardPage(item)),
             );
           },
           child: Card(
